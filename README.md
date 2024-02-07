@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+Component: 
+    Entry Screen (Take user name);
+    A page to display all the users and a play button besides them.
+    A screen where two users can play game with an input field
+User Authentication: save the data user broadcast channel API
+        when the user enter the name, show a page where we have all the active user list and a play button besides them.
+        

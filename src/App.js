@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Routes, Route} from "react-router-dom";
 import './App.css';
+import EntryScreen from './components/EntryScreen';
+import UsersList from './components/UsersList';
+import PlayScreen from './components/PlayScreen';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<EntryScreen />} />
+      <Route path="/user-list/:id" element={<UsersList />} />
+      <Route path="/play/:id/:oppId" element={<PlayScreen />} />
+    </Routes>
+  )
 }
 
 export default App;
